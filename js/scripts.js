@@ -10,42 +10,42 @@ var getTrack = function(){
   var start = getAns("start");
   var design = getAns("design");
   var company = getAns("company");
-  if (facing === "front"){
+  if (facing === "front") {
     return "design";
-  }
-  else {
+  } else {
     if (location === "seattle") {
       return "csharp";
-    }
-    else if (location === "philadelphia") {
+    } else if (location === "philadelphia") {
       return "php";
-    }
-    else {
+    } else {
       if (usage === "enterprise"){
         if (company === "msft"){
           return "csharp";
-        }
-        else {
+        } else {
           return "java";
         }
-      }
-      else {
+      } else {
         if (start === "oct") {
           return "ruby";
-        }
-        else {
+        } else {
           return "php";
         }
-
       }
     }
   }
 };
 
 $(document).ready(function() {
-
+  $("button#reset").click(function(){
+    $("#questions").show();
+    $(".question").hide();
+    $("#question1").show();
+    $("#results").hide();
+    $(".track").hide();
+  });
   $("button#start").click(function(){
     $("button#start").hide();
+    $("#questions").show();
     $("#question1").show();
   });
   $("#question1 button.showNext").click(function(){
@@ -89,7 +89,7 @@ $(document).ready(function() {
     $("#question5").show();
   });
   $("button#finish").click(function(){
-    $("#question6").hide();
+    $("#questions").hide();
     console.log(getTrack());
     var trackQuery = "#" + getTrack();
     $("#results").show();
