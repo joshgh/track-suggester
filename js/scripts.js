@@ -37,11 +37,18 @@ $(document).ready(function() {
     $("#question4").hide();
     $("#question3").show();
   });
-  $("#question5 button.showNext").click(function(){
-    $("#question5").hide();
-  });
   $("#question5 button.showPrev").click(function(){
     $("#question5").hide();
     $("#question4").show();
+  });
+  $("button#finish").click(function(){
+    $("#question5").hide();
+    var facing = getAns("facing");
+    var usage = getAns("usage");
+    var location = getAns("location");
+    var start = getAns("start");
+    var design = getAns("design");
+    $("#results div").show();
+    console.log(facing, usage, location, start, design);
   });
 });
