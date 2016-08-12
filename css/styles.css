@@ -4,10 +4,10 @@
 }
 
 #intro {
-  Background-color: grey;
+  background-color: grey;
 }
 
-button#restart, #questions, #results, .question, .track {
+button#restart, #questions, #results, .question, .track, #name p {
   display: none;
 }
 
@@ -37,6 +37,5 @@ button#restart, #questions, #results, .question, .track {
 }
 
 #name p {
-  display: none;
   color: red;
 }
