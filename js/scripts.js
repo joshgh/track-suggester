@@ -1,4 +1,10 @@
+var getAns = function(name){
+  var query = "input:radio[name=" + name + "]:checked"
+  return $(query).val();
+}
+
 $(document).ready(function() {
+
   $("button#start").click(function(){
     $("button#start").hide();
     $("#question1").show();
