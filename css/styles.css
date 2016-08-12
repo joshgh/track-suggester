@@ -5,7 +5,11 @@
 
 #intro {
   background-color: grey;
+  color: white;
+
 }
+
+
 
 button#restart, #questions, #results, .question, .track, #name p {
   display: none;

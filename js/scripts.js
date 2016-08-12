@@ -107,7 +107,8 @@ $(document).ready(function() {
     if ($("#nameInput").val() === "") {
       $("#name p").show();
     } else {
-      $("#questions").hide();
+
+      $("body > *").hide();
       var trackQuery = "#" + getTrack();
       $(".userName").text($("#nameInput").val());
       $(trackQuery).show();
