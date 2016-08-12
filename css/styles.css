@@ -28,6 +28,10 @@ button#restart, #questions, #results, .question, .track {
   margin: 15px auto;
 }
 
+#name {
+  margin: 10px 0;
+}
+
 #results {
   background-color: yellow;
 }
