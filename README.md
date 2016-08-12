@@ -12,10 +12,6 @@ _This webpage is an independent project towards fulfillment of Intro to Programm
 
 _No setup required, just load index.html in your web browser._
 
-## Known Bugs
-
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
-
 ## Support and contact details
 
 _Please contact me at j.m.huffman@gmail.com with any questions or comments._

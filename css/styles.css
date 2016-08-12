@@ -14,8 +14,6 @@ body {
   padding: 15px;
 }
 
-
-
 button#restart, #questions, #results, .question, .track, #name p {
   display: none;
 }
@@ -31,9 +29,6 @@ button#restart, #questions, #results, .question, .track, #name p {
   background-color: #f2f2f2;
   color: #747c83;
   width: 80%;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 15px auto;
 }
 
 #name {
@@ -46,4 +41,8 @@ button#restart, #questions, #results, .question, .track, #name p {
 
 #name p {
   color: red;
+}
+
+.track p {
+  font-size: 16px;
 }
