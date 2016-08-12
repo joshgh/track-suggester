@@ -46,8 +46,8 @@ $(document).ready(function() {
   $("button#start").click(function(){
     $("button#start").hide();
     $("button#restart").show();
-    $("#questions").show();
     $("#question1").show();
+    $("#questions").slideDown();
   });
   $("#question1 button.showNext").click(function(){
     $("#question1").hide();
@@ -93,8 +93,8 @@ $(document).ready(function() {
     $("#questions").hide();
     console.log(getTrack());
     var trackQuery = "#" + getTrack();
-    $("#results").show();
     $(".userName").text($("#nameInput").val());
     $(trackQuery).show();
+    $("#results").slideDown();
   });
 });
