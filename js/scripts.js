@@ -89,8 +89,10 @@ $(document).ready(function() {
     $("#question5").show();
   });
   $("button#finish").click(function(){
-    $("#question5").hide();
-    $("#results div").show();
+    $("#question6").hide();
     console.log(getTrack());
+    var trackQuery = "#" + getTrack();
+    $("#results").show();
+    $(trackQuery).show();
   });
 });
