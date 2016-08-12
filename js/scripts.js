@@ -1,7 +1,15 @@
 var getAns = function(name){
-  var query = "input:radio[name=" + name + "]:checked"
+  var query = "input:radio[name=" + name + "]:checked";
   return $(query).val();
-}
+};
+
+var getTrack = function(){
+  var facing = getAns("facing");
+  var usage = getAns("usage");
+  var location = getAns("location");
+  var start = getAns("start");
+  var design = getAns("design");
+};
 
 $(document).ready(function() {
 
@@ -37,18 +45,20 @@ $(document).ready(function() {
     $("#question4").hide();
     $("#question3").show();
   });
+  $("#question5 button.showNext").click(function(){
+    $("#question5").hide();
+    $("#question6").show();
+  });
   $("#question5 button.showPrev").click(function(){
     $("#question5").hide();
     $("#question4").show();
   });
+  $("#question6 button.showPrev").click(function(){
+    $("#question6").hide();
+    $("#question5").show();
+  });
   $("button#finish").click(function(){
     $("#question5").hide();
-    var facing = getAns("facing");
-    var usage = getAns("usage");
-    var location = getAns("location");
-    var start = getAns("start");
-    var design = getAns("design");
     $("#results div").show();
-    console.log(facing, usage, location, start, design);
   });
 });
