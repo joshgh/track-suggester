@@ -9,6 +9,37 @@ var getTrack = function(){
   var location = getAns("location");
   var start = getAns("start");
   var design = getAns("design");
+  var company = getAns("company");
+  if (facing === "front"){
+    return "design";
+  }
+  else {
+    if (location === "seattle") {
+      return "csharp";
+    }
+    else if (location === "philadelphia") {
+      return "php";
+    }
+    else {
+      if (usage === "enterprise"){
+        if (company === "msft"){
+          return "csharp";
+        }
+        else {
+          return "java";
+        }
+      }
+      else {
+        if (start === "oct") {
+          return "ruby";
+        }
+        else {
+          return "php";
+        }
+
+      }
+    }
+  }
 };
 
 $(document).ready(function() {
@@ -60,5 +91,6 @@ $(document).ready(function() {
   $("button#finish").click(function(){
     $("#question5").hide();
     $("#results div").show();
+    console.log(getTrack());
   });
 });
