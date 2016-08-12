@@ -35,3 +35,8 @@ button#restart, #questions, #results, .question, .track {
 #results {
   background-color: yellow;
 }
+
+#name p {
+  display: none;
+  color: red;
+}

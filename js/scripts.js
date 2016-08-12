@@ -42,6 +42,7 @@ $(document).ready(function() {
     $("#question1").show();
     $("#results").hide();
     $(".track").hide();
+    $("#name p").hide();
   });
   $("button#start").click(function(){
     $("button#start").hide();
@@ -86,15 +87,20 @@ $(document).ready(function() {
     $("#question4").show();
   });
   $("#question6 button.showPrev").click(function(){
+    $("#name p").hide();
     $("#question6").hide();
     $("#question5").show();
   });
   $("button#finish").click(function(){
-    $("#questions").hide();
-    console.log(getTrack());
-    var trackQuery = "#" + getTrack();
-    $(".userName").text($("#nameInput").val());
-    $(trackQuery).show();
-    $("#results").slideDown();
+    if ($("#nameInput").val() === "") {
+      $("#name p").show();
+    } else {
+      $("#questions").hide();
+      console.log(getTrack());
+      var trackQuery = "#" + getTrack();
+      $(".userName").text($("#nameInput").val());
+      $(trackQuery).show();
+      $("#results").slideDown();
+    }
   });
 });
