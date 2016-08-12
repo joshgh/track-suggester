@@ -107,7 +107,6 @@ $(document).ready(function() {
     if ($("#nameInput").val() === "") {
       $("#name p").show();
     } else {
-
       $("body > *").hide();
       var trackQuery = "#" + getTrack();
       $(".userName").text($("#nameInput").val());
