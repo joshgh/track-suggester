@@ -1,12 +1,33 @@
-#questions, #results, .question, .track {
+#intro, #controls {
+  width: 90%;
+  margin: 10px auto;
+}
+
+#intro {
+  Background-color: grey;
+}
+
+button#restart, #questions, #results, .question, .track {
   display: none;
 }
- #questions {
-   background-color: #f2f2f2;
-   color: #747c83;
-   width: 80%;
-   border-radius: 10px;
-   border: 2px solid black;
-   padding: 20px;
-   margin: 15px auto;
- }
+
+#questions, #results {
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#questions {
+  background-color: #f2f2f2;
+  color: #747c83;
+  width: 80%;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 20px;
+  margin: 15px auto;
+}
+
+#results {
+  background-color: yellow;
+}

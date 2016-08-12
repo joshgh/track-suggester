@@ -36,7 +36,7 @@ var getTrack = function(){
 };
 
 $(document).ready(function() {
-  $("button#reset").click(function(){
+  $("button#restart").click(function(){
     $("#questions").show();
     $(".question").hide();
     $("#question1").show();
@@ -45,6 +45,7 @@ $(document).ready(function() {
   });
   $("button#start").click(function(){
     $("button#start").hide();
+    $("button#restart").show();
     $("#questions").show();
     $("#question1").show();
   });
@@ -93,6 +94,7 @@ $(document).ready(function() {
     console.log(getTrack());
     var trackQuery = "#" + getTrack();
     $("#results").show();
+    $(".userName").text($("#nameInput").val());
     $(trackQuery).show();
   });
 });

@@ -13,12 +13,14 @@
       <h2>Which course track should I choose at Epicodus?</h2>
       <p>This will help you to choose which course track you should follow at Epicodus</p>
     </div>
-    <div id="controls" class="container">
+    <div id="controls">
       <button id="start" class="btn btn-primary" type="button">Begin Survey</button>
-      <button id="reset" class="btn btn-danger" type="button">Reset</button>
+      <button id="restart" class="btn btn-danger" type="button">Restart</button>
     </div>
 
-    <div id="questions" class="container">
+    <form id="questions" class="container">
+      <label for="nameInput">Please enter your name:</label>
+      <input id="nameInput" type="text" placeholder="Name">
       <div id="question1" class="question">
         <p>Are you mainly interested in front end or would you like to do some back end development?
         </p>
@@ -150,28 +152,28 @@
         <button id="finish" class="btn btn-default" type="button">Finish Survey</button>
         <button class="btn btn-default showPrev" type="button">Previous Question</button>
       </div>
-    </div>
+    </form>
 
     <div id="results" class="container">
       <div id="design" class="track">
         <h3>CSS and Design</h3>
-        <p>about the track</p>
+        <p><span class="userName"></span>, with your interest in front-end design the CSS and Design track seems to match your preferences.  A front-end developer mainly focuses on making things which the user interacts with look and work well.</p>
       </div>
       <div id="csharp" class="track">
         <h3>C# and .NET</h3>
-        <p>about the track</p>
+        <p><span class="userName"></span>, the C# and .NET track appears to suit you.  This is the only track currently offered at the Epicodus Seattle branch.  C# is mainly used to build enterprise software and was developed by Microsoft.</p>
       </div>
       <div id="java" class="track">
         <h3>Java and Android</h3>
-        <p>about the track</p>
+        <p><span class="userName"></span>, you would do well to choose the Java and Android track.  Java is a widely used language, it has applications in building enterprise software and Android apps.</p>
       </div>
       <div id="php" class="track">
         <h3>PHP and Drupal</h3>
-        <p>about the track</p>
+        <p><span class="userName"></span>, the PHP and Drupal track would be a good choice.  PHP is a server-side language which is commonly used to build content-heavy websites.</p>
       </div>
       <div id="ruby" class="track">
         <h3>Ruby and Rails</h3>
-        <p>about the track</p>
+        <p><span class="userName"></span>, going the Ruby and Rails route might be a good choice.  Rails is a framework used to build web applications which feature a lot of user interaction.</p>
       </div>
     </div>
 
